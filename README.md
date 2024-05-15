@@ -1,9 +1,46 @@
-Formats:
+[![INFORMS Journal on Computing Logo](https://INFORMSJoC.github.io/logos/INFORMS_Journal_on_Computing_Header.jpg)](https://pubsonline.informs.org/journal/ijoc)
 
-__________________________________________________
+# Project Scheduling with Autonomous Learning Opportunities Experiments
+
+This archive is distributed in association with the [INFORMS Journal on
+Computing](https://pubsonline.informs.org/journal/ijoc) under the [MIT License](LICENSE).
+
+The software and data in this repository were used in the research reported on in the paper 
+[This is a Template](https://doi.org/10.1287/ijoc.2023.0107) by A. Hill and T. V. M. Vossen.
+
+## Cite
+
+To cite the contents of this repository, please cite both the paper and this repo, using their respective DOIs.
+
+https://doi.org/10.1287/ijoc.2023.0107
+
+https://doi.org/10.1287/ijoc.2023.0107.cd
+
+Below is the BibTex for citing this snapshot of the respoitory.
+
+```
+@misc{PSPLdata,
+  author =        {A. Hill and T. W. M. Vossen},
+  publisher =     {INFORMS Journal on Computing},
+  title =         {{Project Scheduling with Autonomous Learning Opportunities Experiments}},
+  year =          {2024},
+  doi =           {10.1287/ijoc.2023.0107},
+  url =           {https://github.com/INFORMSJoC/2023.0107},
+  note =          {Available for download at https://github.com/INFORMSJoC/2023.0107},
+}  
+```
+
+## Description
+
+This repository contains the problem and solution data used for the experiments in the paper. Moreover, the algorithm MAPLE script is included.
+
+## Problem Data Format
+
+The problem instance files follow the following format. 
+
 1) The single-learning case (PSP-SL)
 
-% The instance files contain resource information which is not used in our models.
+(Note that the instance files contain resource information which is not used in our models.)
 
 % (NbTasks) = (number of project jobs);
 NbTasks = 32;
@@ -20,7 +57,6 @@ Tasks = {
   < 6, 1, [10, 1, 2, 0], {13, 16, 22}, [0, 0] >,
   ...
   
-__________________________________________________
 2) The multi-learning case (PSP-ML)
 
 % (n) (number of jobs)
@@ -67,8 +103,9 @@ L 6 1
  d 4
  ...
 
-__________________________________________________
-3) Solution format (both instance types)
+## Solution Data Format
+
+The solution (project schedule) format (both instance types) is as follows.
 % (job),(start time),(end time)
 1,0,0
 2,0,6
